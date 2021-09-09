@@ -1,0 +1,76 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="edit-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Data Barang</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="/perpustakaan?_method=PUT" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="name">judul_buku</label>
+            <input
+              type="text"
+              class="form-control judul_buku"
+              name="judul_buku"
+              nama="Enter judul_buku"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">penulis</label>
+            <input
+              type="text"
+              class="form-control penulis"
+              name="penulis"
+              nama="Enter penulis"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">penerbit</label>
+            <input
+              type="text"
+              class="form-control penerbit"
+              name="penerbit"
+              nama="Enter penerbit"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">jumlah_buku</label>
+            <input
+              type="number"
+              class="form-control jumlah_buku"
+              name="jumlah_buku"
+              nama="Enter jumlah_buku"
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" class="id" name="id" />
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Edit data</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,79 @@
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="add-modal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Tambah data</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="/perpustakaan" method="POST">
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="name">judul_buku</label>
+            <input
+              type="text"
+              class="form-control"
+              id="judul_buku"
+              name="judul_buku"
+              placeholder="Enter nama_judul_buku"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">penulis</label>
+            <input
+              type="text"
+              class="form-control"
+              id="penulis"
+              name="penulis"
+              placeholder="Enter penulis"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">penerbit</label>
+            <input
+              type="text"
+              class="form-control"
+              id="penerbit"
+              name="penerbit"
+              placeholder="Enter penerbit"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="name">jumlah_buku</label>
+            <input
+              type="number"
+              class="form-control"
+              id="jumlah_buku"
+              name="jumlah_buku"
+              placeholder="Enter jumlah_buku"
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Tambah data</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
